@@ -1,0 +1,19 @@
+﻿@model Product
+<form asp-action="Edit" asp-controller="Product" method="post">
+    <input type="hidden" asp-for="ProductId" value=@Model.ProductId />
+
+    <label asp-for="ProductId">Product Id: </label>
+    <label>@Model.ProductId</label>
+    <br />
+
+    <label asp-for="Name">Product Name: </label>
+    <label>@Model.Name</label>
+    <br />
+
+    <label asp-for="Price">Price</label>
+    <input asp-for="Price" value=@Model.Price />
+    <br />
+    <button type="submit">Edit</button>
+</form>
+
+<a asp-action="Index">Back to List</a>

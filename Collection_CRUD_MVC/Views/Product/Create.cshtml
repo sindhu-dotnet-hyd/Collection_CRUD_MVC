@@ -1,0 +1,14 @@
+﻿@model Product 
+<form asp-action-controller="Product" asp-action="Create" method="post" >
+    <label asp-for="Name"> </label><br/>
+    <input asp-for="Name" />
+    <br/>
+
+    <label asp-for="Price"> </label><br/>
+    <input asp-for="Price" />
+    <br/>
+
+    <button type="submit"> Create </button><br/>
+</form>
+
+<a asp-action="Index">Back to List</a>

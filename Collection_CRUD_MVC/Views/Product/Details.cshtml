@@ -1,0 +1,22 @@
+﻿@model Product 
+<h2> Product Details </h2>
+<table>
+    <tr>
+        <td> Product Id: </td>
+        <td> @Model.ProductId</td>
+    </tr>
+
+    <tr>
+        <td> Product Name: </td>
+        <td> @Model.Name</td>
+
+    </tr>
+
+    <tr>
+        <td> Product Price: </td>
+        <td> @Model.Price</td>
+    </tr>
+
+</table>
+
+<a asp-action="Index">Back to List</a>
